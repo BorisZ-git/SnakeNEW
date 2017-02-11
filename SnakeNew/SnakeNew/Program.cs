@@ -29,8 +29,8 @@ namespace SnakeNew
             //the end we will realize function where will be instriction that reaction will be
             //if snake hit her tail or hit wall.
             //draw the frame with class wall
-            Wall wall = new Wall(80, 25, '+');
-            wall.Draw();
+            Wall Frame = new Wall(80, 25, '+');
+            Frame.Draw();
             //realize snake with help of class point
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake(p, 4, Direction.Right);

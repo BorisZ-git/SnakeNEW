@@ -8,7 +8,7 @@ namespace SnakeNew
 {
     class Wall
     {
-        List<Figure> ListWall = new List<Figure>;
+        List<Figure> ListWall = new List<Figure>();
         public Wall(int mapWidth,int mapHeight,char sym)
         {
             //set Window parametrs

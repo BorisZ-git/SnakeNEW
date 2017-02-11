@@ -9,5 +9,12 @@ namespace SnakeNew
     class Figure
     {
         protected List<Point> ListP;
+        public void Draw()
+        {
+            foreach (var i in ListP)
+            {
+                i.Draw();
+            }
+        }
     }
 }
