@@ -36,8 +36,8 @@ namespace SnakeNew
             Snake snake = new Snake(p, 4, Direction.Right);
             snake.Draw();
             //create food in the window
-            Food food = new Food(80, 25, '$');
-            food = food.CreateFood();
+            Food foods = new Food(80, 25, '$');
+            Point food = foods.CreateFood();
             food.Draw();
             //start the game
             while (true)
@@ -50,7 +50,7 @@ namespace SnakeNew
                 //check on operation Eat
                 if (snake.Eat(food))
                 {
-                    food = food.CreateFood();
+                    food = foods.CreateFood();
                     food.Draw();
                 }
                 //pause
