@@ -19,12 +19,5 @@ namespace SnakeNew
                 ListP.Add(p); 
             }
         }
-        public void Draw()
-        {
-            foreach (var p in ListP)
-            {
-                p.Draw();
-            }
-        }
     }
 }
