@@ -14,6 +14,7 @@ namespace SnakeNew
             Console.WriteLine("Hello. Introduce yourself please:");
             string name = Console.ReadLine();
             Console.WriteLine("Glad to see you " + name + "\nlet start");
+            Console.Clear();
             // We need realize game snake.Where snake move in space that we give to her,
             // and eat food that we will be create in random position. When snake eat food
             // she will be grow. Game will be end if snake bite herself or hit wall of space
@@ -43,23 +44,23 @@ namespace SnakeNew
             while (true)
             {
                 //check on crash
-                if (Wall.IsHit(snake)|| snake.IsHitTail())
-                {
-                    break;
-                }
-                //check on operation Eat
-                if (snake.Eat(food))
-                {
-                    food = foods.CreateFood();
-                    food.Draw();
-                }
-                //pause
-                Thread.Sleep 100;
-                //check on press key
-                if (Console.KeyAvailable)
-                {
+                //if (Wall.IsHit(snake)|| snake.IsHitTail())
+                //{
+                //    break;
+                //}
+                ////check on operation Eat
+                //if (snake.Eat(food))
+                //{
+                //    food = foods.CreateFood();
+                //    food.Draw();
+                //}
+                ////pause
+                Thread.Sleep (100);
+                ////check on press key
+                //if (Console.KeyAvailable)
+                //{
 
-                }
+                //}
                 //snake move
                 snake.Move();
             }

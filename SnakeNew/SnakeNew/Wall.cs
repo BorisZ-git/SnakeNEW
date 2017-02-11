@@ -12,7 +12,7 @@ namespace SnakeNew
         public Wall(int mapWidth,int mapHeight,char sym)
         {
             //set Window parametrs
-            Console.SetBufferSize(mapWidth, mapHeight);
+            Console.SetBufferSize(120, 80);
             //Create line
             HorizontalLine LineUp = new HorizontalLine(0, mapWidth - 2, 0, sym);
             HorizontalLine LineDown = new HorizontalLine(0, mapWidth - 2, mapHeight-1, sym);
