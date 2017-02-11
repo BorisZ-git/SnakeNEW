@@ -44,24 +44,24 @@ namespace SnakeNew
             while (true)
             {
                 //check on crash
-                //if (Wall.IsHit(snake)|| snake.IsHitTail())
-                //{
-                //    break;
-                //}
-                ////check on operation Eat
-                //if (snake.Eat(food))
-                //{
-                //    food = foods.CreateFood();
-                //    food.Draw();
-                //}
-                ////pause
-                Thread.Sleep (300);
-                ////check on press key
-                //if (Console.KeyAvailable)
-                //{
-
-                //}
-                //snake move
+                if (Wall.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
+                //check on operation Eat
+                if (snake.Eat(food))
+                {
+                    food = foods.CreateFood();
+                    food.Draw();
+                }
+                //pause
+                Thread.Sleep(300);
+                //check on press key
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKey key = Console.ReadLine();
+                    snake.HandleKey();
+                }                
                 snake.Move();
             }
             Console.ReadLine();

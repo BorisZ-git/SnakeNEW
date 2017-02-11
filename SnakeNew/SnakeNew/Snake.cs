@@ -19,8 +19,7 @@ namespace SnakeNew
                 p.Move(i, direction);
                 ListP.Add(p); 
             }
-        }
-        
+        }        
         internal void Move()
         {
             Point tail = ListP.First();
@@ -30,7 +29,6 @@ namespace SnakeNew
             tail.Clear();
             head.Draw();
         }
-
         public Point GetNextPoint()
         {
             Point head = ListP.Last();
@@ -38,5 +36,6 @@ namespace SnakeNew
             NextPoint.Move(1,direction);
             return NextPoint;
         }
+
     }
 }
