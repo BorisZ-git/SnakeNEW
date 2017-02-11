@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace SnakeNew
 {
-    enum Direction
+    class Figure
     {
-        Down,
-        Up,
-        Left,
-        Right
+        protected List<Point> ListP;
     }
 }

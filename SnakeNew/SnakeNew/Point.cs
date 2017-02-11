@@ -8,9 +8,9 @@ namespace SnakeNew
 {
     class Point
     {
-        int x;
-        int y;
-        char sym;
+        public int x;
+        public int y;
+        public char sym;
         public Point(int x,int y,char sym)
         {
             this.x = x;
