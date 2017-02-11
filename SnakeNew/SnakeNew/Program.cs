@@ -55,7 +55,7 @@ namespace SnakeNew
                 //    food.Draw();
                 //}
                 ////pause
-                Thread.Sleep (100);
+                Thread.Sleep (300);
                 ////check on press key
                 //if (Console.KeyAvailable)
                 //{
