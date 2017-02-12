@@ -66,5 +66,10 @@ namespace SnakeNew
             }
             else return false;
         }
+
+        internal bool IsHitTail()
+        {
+            
+        }
     }
 }
