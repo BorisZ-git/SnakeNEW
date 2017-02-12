@@ -44,10 +44,10 @@ namespace SnakeNew
             while (true)
             {
                 //check on crash
-                if (Wall.IsHit(snake) || snake.IsHitTail())
-                {
-                    break;
-                }
+                //if (Wall.IsHit(snake) || snake.IsHitTail())
+                //{
+                //    break;
+                //}
                 //check on operation Eat
                 if (snake.Eat(food))
                 {
@@ -55,7 +55,7 @@ namespace SnakeNew
                     food.Draw();
                 }
                 //pause
-                Thread.Sleep(300);
+                Thread.Sleep(100);
                 //check on press key
                 if (Console.KeyAvailable)
                 {
