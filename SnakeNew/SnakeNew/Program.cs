@@ -59,8 +59,8 @@ namespace SnakeNew
                 //check on press key
                 if (Console.KeyAvailable)
                 {
-                    ConsoleKey key = Console.ReadLine();
-                    snake.HandleKey();
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
                 }                
                 snake.Move();
             }
