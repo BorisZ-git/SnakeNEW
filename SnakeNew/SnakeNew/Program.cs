@@ -44,7 +44,7 @@ namespace SnakeNew
             while (true)
             {
                 //check on crash
-                if (Frame.IsHit(snake))
+                if (Frame.IsHit(snake) || snake.IsHitTail())
                 {
                     break;
                 }

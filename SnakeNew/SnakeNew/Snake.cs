@@ -69,7 +69,12 @@ namespace SnakeNew
 
         internal bool IsHitTail()
         {
-            return true;
+            Point head = ListP.Last();
+            for (int i = 0; i < ListP.Count - 2; i++)
+            {
+                if (head.IsHit(ListP[i])) return true;
+            }
+            return false;
         }
     }
 }
