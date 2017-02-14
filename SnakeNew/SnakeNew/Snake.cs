@@ -69,7 +69,7 @@ namespace SnakeNew
 
         internal bool IsHitTail()
         {
-            
+            return true;
         }
     }
 }

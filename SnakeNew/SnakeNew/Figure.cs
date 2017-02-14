@@ -16,5 +16,27 @@ namespace SnakeNew
                 i.Draw();
             }
         }
+        public bool IsHit (Figure figureSnake)
+        {
+            foreach (var WallP in ListP)
+            {
+                if (figureSnake.IsHit(WallP))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public bool IsHit (Point WallP)
+        {
+            foreach (var p in ListP)
+            {
+                if (WallP.IsHit(p))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

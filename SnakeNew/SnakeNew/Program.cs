@@ -44,10 +44,10 @@ namespace SnakeNew
             while (true)
             {
                 //check on crash
-                //if (Wall.IsHit(snake) || snake.IsHitTail())
-                //{
-                //    break;
-                //}
+                if (Frame.IsHit(snake))
+                {
+                    break;
+                }
                 //check on operation Eat
                 if (snake.Eat(food))
                 {

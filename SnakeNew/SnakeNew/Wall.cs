@@ -30,5 +30,18 @@ namespace SnakeNew
                 Line.Draw();
             }
         }
+
+        internal bool IsHit(Figure figureSnake)
+        {
+            foreach (var wall in ListWall)
+            {
+                if (wall.IsHit(figureSnake))
+                {
+                    return true;
+                }
+            }
+            return false;
+
+        }
     }
 }
